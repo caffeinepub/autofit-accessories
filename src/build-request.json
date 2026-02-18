@@ -1,0 +1,96 @@
+{
+  "kind": "build_request",
+  "title": "Remove pricing page/section from the website",
+  "projectName": "AutoFit Accessories",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Remove the Pricing page content so the website does not display any pricing tiers, package prices, or currency amounts.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "pricing not require on website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visiting the former pricing route does not show any pricing tiers or prices (e.g., no \"$99\", \"From $249\", package cards with prices, etc.).",
+        "No other page shows pricing tiers or package prices."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update the main navigation to remove the \"Pricing\" link so users are not directed to a pricing page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "pricing not require on website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Top navigation (desktop and mobile) no longer includes a link labeled \"Pricing\" that routes to /pricing."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Update the footer links to remove the \"Pricing\" link from the \"Quick Links\" section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "pricing not require on website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer \"Quick Links\" section no longer includes a \"Pricing\" link pointing to /pricing."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Ensure the /pricing route does not break existing navigation/bookmarks by converting it into a non-pricing page that directs users to request a quote via the Contact page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "pricing not require on website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "/pricing remains a valid route (no blank page or runtime error).",
+        "The /pricing page contains only non-pricing copy (in English) that tells users pricing is available upon request and provides a clear call-to-action link/button to /contact."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (compose existing UI components instead).",
+    "Do not edit frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx."
+  ],
+  "nonGoals": [
+    "Domain/DNS configuration or providing a custom domain name.",
+    "Changing backend data models or adding new backend endpoints."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

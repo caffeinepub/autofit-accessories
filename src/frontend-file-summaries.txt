@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with automotive-inspired dark graphite theme and vibrant orange accent colors using OKLCH color system for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom automotive theme colors, Inter font family, glow shadow effects, and fade-in animations.",
+  "frontend/index.html": "HTML entry point with SEO meta tags, favicon, and Google Fonts preconnect for Inter font family.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup for all pages (Home, Services, Gallery, Pricing, About, Contact) wrapped in ThemeProvider and SiteLayout.",
+  "frontend/src/components/site/SiteLayout.tsx": "Shared layout wrapper component that provides consistent header, main content area, and footer structure across all pages.",
+  "frontend/src/components/site/TopNav.tsx": "Responsive navigation header with logo, desktop menu links (Home, Services, Gallery, About, Contact), mobile sheet menu, and active route highlighting - Pricing link removed.",
+  "frontend/src/components/site/Footer.tsx": "Site footer with brand info, quick links (without Pricing), contact details, social media icons, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with hero section featuring workshop background image, value proposition cards, and call-to-action sections.",
+  "frontend/src/pages/ServicesPage.tsx": "Services listing page displaying 8 core installation services in a responsive grid with icons and descriptions.",
+  "frontend/src/pages/GalleryPage.tsx": "Gallery page managing state for 8 installation images with grid display and lightbox modal functionality.",
+  "frontend/src/pages/PricingPage.tsx": "Pricing page converted to a custom quote request page with contact methods and explanation of why pricing is personalized, featuring a prominent CTA to the contact page without any pricing tiers or amounts.",
+  "frontend/src/pages/AboutPage.tsx": "About page with company story, values, and why-choose-us sections highlighting expertise and customer focus.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with business information cards (contact person, phone, email, location, hours) and integrated inquiry form, now displaying Sanjay Utekar's contact details with working tel: and mailto: links.",
+  "frontend/src/components/contact/InquiryForm.tsx": "Contact form component with validation using react-hook-form, service selection dropdown, and success/error state handling connected to backend.",
+  "frontend/src/components/gallery/GalleryGrid.tsx": "Responsive image grid component displaying gallery images with hover effects and click handlers for lightbox.",
+  "frontend/src/components/gallery/GalleryLightbox.tsx": "Modal lightbox component with keyboard navigation (arrows, escape), next/previous controls, and image counter display.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting contact form inquiries to the backend with proper error handling and cache invalidation."
+}

@@ -1,0 +1,81 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-pricing-page-content-so-the-website-does-not-display-any-pricing-tiers-package-prices-or-currency-amounts",
+      "featureTitle": "Remove the Pricing page content so the website does not display any pricing tiers, package prices, or currency amounts.",
+      "files": [
+        "frontend/src/pages/PricingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-main-navigation-to-remove-the-pricing-link-so-users-are-not-directed-to-a-pricing-page",
+      "featureTitle": "Update the main navigation to remove the \"Pricing\" link so users are not directed to a pricing page.",
+      "files": [
+        "frontend/src/components/site/TopNav.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-footer-links-to-remove-the-pricing-link-from-the-quick-links-section",
+      "featureTitle": "Update the footer links to remove the \"Pricing\" link from the \"Quick Links\" section.",
+      "files": [
+        "frontend/src/components/site/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-pricing-route-does-not-break-existing-navigation-bookmarks-by-converting-it-into-a-non-pricing-page-that-directs-users-to-request-a-quote-via-the-contact-page",
+      "featureTitle": "Ensure the /pricing route does not break existing navigation/bookmarks by converting it into a non-pricing page that directs users to request a quote via the Contact page.",
+      "files": [
+        "frontend/src/pages/PricingPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
