@@ -1,52 +1,24 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
-  "architectural_notes": [],
+  "summary": "Website project with chosen free domain swamisamarth.icp.app (deployment in progress).",
+  "architectural_notes": [
+    "Selected deployment domain: swamisamarth.icp.app"
+  ],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-remove-the-pricing-page-content-so-the-website-does-not-display-any-pricing-tiers-package-prices-or-currency-amounts",
-      "title": "Remove the Pricing page content so the website does not display any pricing tiers, package prices, or currency amounts.",
+      "id": "feature-update-the-site-html-metadata-to-reflect-the-chosen-production-domain-swamisamarth-icp-app-by-adding-a-canonical-url-and-open-graph-url-pointing-to-https-swamisamarth-icp-app",
+      "title": "Update the site HTML metadata to reflect the chosen production domain \"swamisamarth.icp.app\" by adding a canonical URL and Open Graph URL pointing to https://swamisamarth.icp.app.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-update-the-main-navigation-to-remove-the-pricing-link-so-users-are-not-directed-to-a-pricing-page",
-      "title": "Update the main navigation to remove the \"Pricing\" link so users are not directed to a pricing page.",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-footer-links-to-remove-the-pricing-link-from-the-quick-links-section",
-      "title": "Update the footer links to remove the \"Pricing\" link from the \"Quick Links\" section.",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-ensure-the-pricing-route-does-not-break-existing-navigation-bookmarks-by-converting-it-into-a-non-pricing-page-that-directs-users-to-request-a-quote-via-the-contact-page",
-      "title": "Ensure the /pricing route does not break existing navigation/bookmarks by converting it into a non-pricing page that directs users to request a quote via the Contact page.",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Remove pricing section/page from the website (pricing not required)",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
   "projectName": "AutoFit Accessories",
   "clarification_mode": "instant",
   "clarification_rounds": 0

@@ -1,63 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "AutoFit Accessories - Remove pricing content and links while preserving /pricing route",
+  "title": "Set canonical and Open Graph URL metadata to swamisamarth.icp.app",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Remove pricing tiers and currency amounts from the Pricing page so no package pricing is displayed anywhere.",
+      "summary": "Add canonical URL and Open Graph URL metadata pointing to https://swamisamarth.icp.app in the base HTML document.",
       "acceptanceCriteria": [
-        "Visiting the former pricing route does not show any pricing tiers or prices (e.g., no \"$99\", \"From $249\", package cards with prices, etc.).",
-        "No other page shows pricing tiers or package prices."
+        "frontend/index.html includes a <link rel=\"canonical\" href=\"https://swamisamarth.icp.app\" /> tag.",
+        "frontend/index.html includes a <meta property=\"og:url\" content=\"https://swamisamarth.icp.app\" /> tag.",
+        "The site still loads correctly at the root path (/) and existing routes continue to work."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/PricingPage.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Remove the tiered pricing UI and any currency/amount strings; replace with non-pricing marketing copy that does not include package cards, tiers, or prices (compose existing UI components only; do not edit files under frontend/src/components/ui)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Remove the Pricing link from the main (desktop and mobile) navigation.",
-      "acceptanceCriteria": [
-        "Top navigation (desktop and mobile) no longer includes a link labeled \"Pricing\" that routes to /pricing."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/site/TopNav.tsx",
-          "operation": "modify",
-          "description": "Update navLinks to remove the /pricing entry so both desktop and mobile navigation no longer show a \"Pricing\" link (keep other links intact; do not edit files under frontend/src/components/ui)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Remove the Pricing link from the footer Quick Links section.",
-      "acceptanceCriteria": [
-        "Footer \"Quick Links\" section no longer includes a \"Pricing\" link pointing to /pricing."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/site/Footer.tsx",
-          "operation": "modify",
-          "description": "Remove the footer \"Pricing\" item from the Quick Links list so it no longer points to /pricing."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Convert /pricing into a non-pricing page that directs users to request a quote via Contact, without breaking existing bookmarks.",
-      "acceptanceCriteria": [
-        "/pricing remains a valid route (no blank page or runtime error).",
-        "The /pricing page contains only non-pricing copy (in English) that tells users pricing is available upon request and provides a clear call-to-action link/button to /contact."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/PricingPage.tsx",
-          "operation": "modify",
-          "description": "Implement a replacement /pricing view focused on 'Pricing available upon request' messaging and a clear CTA (Link/Button) to /contact; ensure it renders reliably with no runtime errors and contains no tiers/prices/currency amounts (compose existing UI components only; do not edit files under frontend/src/components/ui)."
+          "description": "Add <link rel=\"canonical\" href=\"https://swamisamarth.icp.app\" /> and <meta property=\"og:url\" content=\"https://swamisamarth.icp.app\" /> within the <head> section, keeping existing metadata intact to avoid impacting routing or load behavior."
         }
       ]
     }

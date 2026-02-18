@@ -1,7 +1,7 @@
 {
   "frontend/src/index.css": "Global styles with automotive-inspired dark graphite theme and vibrant orange accent colors using OKLCH color system for both light and dark modes.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with custom automotive theme colors, Inter font family, glow shadow effects, and fade-in animations.",
-  "frontend/index.html": "HTML entry point with SEO meta tags, favicon, and Google Fonts preconnect for Inter font family.",
+  "frontend/index.html": "HTML entry point with SEO meta tags including canonical URL and Open Graph URL pointing to swamisamarth.icp.app, favicon, and Google Fonts preconnect for Inter font family.",
   "frontend/src/App.tsx": "Main application component with TanStack Router setup for all pages (Home, Services, Gallery, Pricing, About, Contact) wrapped in ThemeProvider and SiteLayout.",
   "frontend/src/components/site/SiteLayout.tsx": "Shared layout wrapper component that provides consistent header, main content area, and footer structure across all pages.",
   "frontend/src/components/site/TopNav.tsx": "Responsive navigation header with logo, desktop menu links (Home, Services, Gallery, About, Contact), mobile sheet menu, and active route highlighting - Pricing link removed.",
